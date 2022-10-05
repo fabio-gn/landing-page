@@ -1,9 +1,12 @@
 * {
-    outline: 1px dotted grey;
+    /*outline: 1px dotted grey;*/
 }
 html {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    margin: 0;
 }
 .section {
     display: flex;
@@ -13,14 +16,61 @@ html {
     color: #f9faf8;
 
 }
+.header {
+    justify-content: space-around;
+}
+.navbar li {
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 3rem;
+}
+.navbar {
+    display: flex;
+    
+    align-items: center;
+}
+.navbar a {
+    color: #E5E7EB;
+    text-decoration: none;
+}
+
 .hero-text {
     font-size: 48px;
-    font-weight: 900;
+    font-weight: 700;
     color: inherit;
 }
 .hero-secondary {
     font-size: 18px;
     color: #E5E7EB;
+    margin-top: -2rem;
+}
+.description {
+    justify-content: space-around;
+    padding: 1rem 10rem 5rem 10rem;
+    align-items: center;
+    
+}
+.img-wrap{
+    
+    margin-left: 2rem;
+}
+.description-image {
+    display: block;
+    
+
+}
+.description-text {
+    width: 30rem;
+    
+}
+.sign-up {
+    color:#e5e7e2;
+    background-color: #3882f6;
+    border: none;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
 }
 .citazione {
     background-color: #e5e7e2;
