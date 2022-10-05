@@ -1,0 +1,9 @@
+* {
+    outline: 1px dotted grey;
+}
+html {
+    box-sizing: border-box;
+}
+.section {
+    display: flex;
+}
