@@ -1,5 +1,5 @@
 * {
-    /*outline: 1px dotted grey;*/
+    outline: 1px dotted grey;
 }
 html {
     box-sizing: border-box;
@@ -11,13 +11,14 @@ body {
 .section {
     display: flex;
 }
-.header, .description, .copyright {
+.header, .description, .footer {
     background-color:#1f2937;
     color: #f9faf8;
 
 }
 .header {
     justify-content: space-around;
+    padding: 0 10% 0 10%;
 }
 .navbar li {
     display: inline-block;
@@ -46,13 +47,24 @@ body {
 }
 .description {
     justify-content: space-around;
-    padding: 1rem 10rem 5rem 10rem;
+    padding: 1rem 20% 5rem 20%;
     align-items: center;
     
 }
 .img-wrap{
     
     margin-left: 2rem;
+}
+.images img {
+    width: 150px;
+    border: 4px solid #3882f6;
+    border-radius: .5rem;
+}
+figure {
+    flex-basis: 0;
+}
+figcaption {
+    text-align: center;
 }
 .description-image {
     display: block;
@@ -67,15 +79,84 @@ body {
     color:#e5e7e2;
     background-color: #3882f6;
     border: none;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     border-radius: 10px;
     font-size: 1rem;
     font-weight: 600;
 }
+.sign-up:hover{
+    background-color:#E5E7EB;
+    color:#3882f6;
+}
+.sign-up:active{
+    background-color:#005ff9;
+    color:#E5E7EB;
+}
 .citazione {
     background-color: #e5e7e2;
     color:#1f2937;
+    font-family: Helvetica, sans-serif;
     font-weight: 100;
-    font-size: 36px;
+    font-size: 26px;
     font-style: italic;
+    padding: 5rem 20rem;
+    flex-direction: column;
+    
+    
 }
+.citation{
+    padding: 0;
+    margin: 0;
+}
+.autore-cit{
+    align-self: flex-end;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: -2rem;
+    
+}
+.call-to-action-wrap{
+    justify-content: center;
+    padding: 4rem;
+    
+}
+.call-to-action {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    background-color:#3882f6;
+    color:#e5e7e2;
+    padding: 1.5rem 3rem;
+    border-radius: 10px;
+}
+.call-to-action-wrap .sign-up {
+    border: 2px solid #e5e7e2;
+}
+footer {
+    display: flex;
+    justify-content: center;
+}
+.copyright{
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem;
+}
+.images.section{
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    flex: 1;
+}
+.image-section-title{
+    text-align: center;
+    margin-top: 2rem;
+    
+}
+.strong-text {
+    display: block;
+}
+.call-to-action .sign-up{
+    height: 2.5rem;
+    align-self: center;
+}
+ 
